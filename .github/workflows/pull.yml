@@ -20,7 +20,7 @@ jobs:
 
     - name: Deploy to server
       run: |
-        ssh -o StrictHostKeyChecking=no root@172.111.36.52 << 'EOF'
+        ssh -o StrictHostKeyChecking=no root@172.111.36.522 << 'EOF'
           cd /root/repo
           git config --global --add safe.directory /root/repo
           git reset --hard origin/main
